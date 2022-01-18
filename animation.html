@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title> 
+  <style>
+  @keyframes left-right{
+  from{left:1px;top:1px;}
+to{left:1300px;top:1px;}
+}
+@keyframes right-left{
+from{left:1300px;top:1px;}
+to{left:1px;top:1px;}
+}
+.head1{
+position:relative;
+animation:left-right 10s infinite;
+animation-delay:2s;
+}
+.head2{
+position:relative;
+animation:right-left 10s infinite;
+animation-delay:2s;
+animation-direction:alternate;
+}
+  </style>
+ </head>
+ <body>
+  <h1>The transition with multiple properties</h1>
+  <div style="background:#33ffff;">
+  <h1 class="head1">cascading style sheets table....</h1>
+  </div>
+  <div style="background:#ffff66;">
+  <h1 class="head2">css table End</h1>
+  </div>
+ </body>
+</html>
