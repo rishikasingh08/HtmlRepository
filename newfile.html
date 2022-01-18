@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Assignment</title>
+ </head>
+ <body>
+<title>Language Translator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <style type="text/css">
+h1{
+ color: white;
+  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;
+}
+body{
+	background-color:#FAEBD7;
+}
+.content{
+	background-color:#DCDCDC;
+}
+textarea{
+	border:2px solid black;
+	border-radius:12px;
+	font-size:15px;
+	font-family: sans-serif;
+}
+input{
+	margin-left:20px;
+}
+input:hover{
+	background-color:#ff6600;
+}
+select{
+	border:2px solid black;
+}
+option:hover{
+	color:white;
+	 background-color:#0066ff;
+}
+</style>
+<body>
+</head>
+ <body>
+ 		
+			<h1 align="center" ><u>Language Translator</u></h1><hr>
+		<form method="POST">
+			<div align="center" class="content">
+		<br>	<textarea rows="10" cols="110" name="userText">{{data}}</textarea><br><br>
+			<select class="form-select" aria-label="Default select example" size="5" name="lang">
+			  <option selected>Choose language</option>
+			  <option value="ar">Arabic</option>
+			  <option value="bn">Bengali</option>
+			  <option value="zh-TW">Chinese (Taiwan)</option>
+   			  <option value="da">Danish</option>
+			   <option value="en">English</option>	
+			  <option value="hi">Hindi</option>
+			  <option value="fr">French</option>
+			  <option value="de">German</option>
+			  <option value="el">Greek</option>
+			  <option value="gu">Gujarati</option>
+			  <option value="id">Indonesian</option>
+			  <option value="it">Italian</option>
+			  <option value="ja">Japanese</option>
+			  <option value="ml">Malayalam</option>
+			  <option value="ru">Russian</option>
+			  <option value="es">Spanish</option>
+			  <option value="ta">Tamil</option>
+			  <option value="te">Telugu</option>
+			  <option value="tr">Turkish</option>
+			  <option value="ur">Urdu</option>
+			</select>
+			<!-- {%csrf_token%} -->
+			<input type="submit" value="Translate" class="btn btn-primary"><br><br>
+			<textarea rows="10" cols="110">{{translator}}</textarea>
+		</div>
+		</form>
+	 </body>
+</html>
